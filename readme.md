@@ -1,6 +1,8 @@
 mini-c
 ======
 
+-- updated by me to replace the x86 code generator with an ARM code generator. See the arm branch--
+
 I set myself a challenge: write a self-hosting C compiler in 10 hours. This is the result, plus lots of cleanup (check "releases" for the 10 hour version).
 
 Implementation:
