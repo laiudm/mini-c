@@ -2,7 +2,7 @@
 // mini-c, by Sam Nipps (c) 2015; modified to create arm code instead by Dave Mugridge 2015.
 // MIT license
 //---------------
-// remember that this code is in the arm branch, so when it's first cloned to linux, 
+// remember that, as code is in the arm branch, when it's first cloned to linux, 
 // you need to move to the arm branch: "git checkout arm"
 //
 // To compile: gcc -std=gnu11 -Werror -Wall ccd.c -o ccd
