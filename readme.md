@@ -1,6 +1,10 @@
 mini-c
 ======
 
+-- this branch has an updated cc.c file that generates arm code instead of x86 code. --
+
+
+
 I set myself a challenge: write a self-hosting C compiler in 10 hours. This is the result, plus lots of cleanup (check "releases" for the 10 hour version).
 
 Implementation:
