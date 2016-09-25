@@ -2,10 +2,14 @@
 // mini-c, by Sam Nipps (c) 2015; modified to create arm code instead by Dave Mugridge 2015.
 // MIT license
 //---------------
+// remember that this code is in the arm branch, so when it's first cloned to linux, 
+// you need to move to the arm branch: "git checkout arm"
+//
 // To compile: gcc -std=gnu11 -Werror -Wall ccd.c -o ccd
 // To run on itself: ./ccd ccd.c
 // To generate assembly output: gcc -std=gnu11 -Werror -Wall -S simple.c
 // To generate an executable from assembly: gcc -o simple -g simple.s			// -g to include debug
+//
 // gdb t
 // break main
 // run <parameters>
