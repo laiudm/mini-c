@@ -6,16 +6,16 @@ tests/%: tests/%.c cc
 	gcc -m32 a.s -o $@
 
 ccself: cc
-	./cc cc.c
-	gcc -m32 a.s -o ccself
+	./cc cc.s cc.c
+	gcc cc.s -o ccself
 
 selfhost: ccself
 
 selftest: ccself tests/triangular.c
-	./ccself tests/triangular.c
-	gcc -m32 a.s -o triangular; ./triangular 5; [ $$? -eq 15 ]
+	./ccself tests/triangular.s tests/triangular.c
+	gcc tests/triangular.s -o tests/triangular; ./tests/triangular 5; [ $$? -eq 15 ]
 
 clean:
-	rm -f {cc,ccself,triangular}{,.exe} a.s
+	rm -f {cc,ccself,tests/triangular}{,.s} a.s
 
 .PHONY: selfhost selftest clean
